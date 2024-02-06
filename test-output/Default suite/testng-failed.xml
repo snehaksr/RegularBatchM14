@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.InvocationCount">
+      <class name="dataDrivenPractice.DataDriven1">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="precondition"/>
+          <include name="exceldata" invocation-numbers="1 2 3"/>
+          <include name="dws"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- practice.InvocationCount -->
+      </class> <!-- dataDrivenPractice.DataDriven1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
